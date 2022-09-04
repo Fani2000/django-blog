@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+<hr />
+{% load static %}
+
+<hr />
+{% block title %} My Blog {% endblock %}
+
+<hr />
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock %}
+
+<hr />
+{% block content %}
+<header id="main-navigation">
+  <h1><a href="">Fani's Blog</a></h1>
+  <nav>
+    <a href="">All Posts</a>
+  </nav>
+</header>
+
+<section id="welcome">
+  <header>
+    <img src="" alt="Fani - The author of this blog" />
+    <h2>FANIKEORAPETSE"S BLOG</h2>
+  </header>
+  <p>
+    Hi, I am fani and i love to blog about tech, the world and books, its kinda
+    my jam
+  </p>
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Thoughts</h2>
+
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="" alt="Mountain Hiking" />
+          <div class="post__content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              There's nothing like the views you get when hiking in the
+              moutnains! And I wasn't even prepared for what happend whilst was
+              enjoying the view!
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="" alt="Mountain Hiking" />
+          <div class="post__content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              There's nothing like the views you get when hiking in the
+              moutnains! And I wasn't even prepared for what happend whilst was
+              enjoying the view!
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I do</h2>
+  <p>
+    I love programming, I love reading books, and my goals is to keep growing as
+    a developer and have a fulfilling life
+  </p>
+</section>
+{% endblock %}
